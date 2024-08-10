@@ -37,6 +37,31 @@ This web application allows users to upload documents (PDF, DOCX, TXT) and recei
         Backend API: http://localhost:8000  
 
 
+## Running Locally without Docker: 
+  # Backend
+  1. Navigate to the backend directory:
+     
+         cd doc_summarizer_backend
+         
+  3. Create a virtual environment and install dependencies:
+     
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+
+  5. Run the FastAPI server:
+
+           uvicorn main:app --reload
+
+
+  # Frontend
+  1. Navigate to the frontend directory:
+
+         cd doc-summarizer-frontend       
+  2. Install dependencies and start the React application:
+
+          npm install
+          npm start
 ## Usage
 - Visit the frontend URL (http://localhost:3000) to upload documents and view summaries.
 - The backend API can be accessed directly via http://localhost:8000
