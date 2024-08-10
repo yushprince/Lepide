@@ -27,32 +27,30 @@ This web application allows users to upload documents (PDF, DOCX, TXT) and recei
      cd doc-summarizer
   
   2. Build and run the application:
-      docker-compose up --build
-  
+     ```bash
+         docker-compose up --build2.
      
-  4. Access the application:
+  3. Access the application:
   
         Frontend: http://localhost:3000
+     
         Backend API: http://localhost:8000  
 
 
-### Usage
+## Usage
+- Visit the frontend URL (http://localhost:3000) to upload documents and view summaries.
+- The backend API can be accessed directly via http://localhost:8000
 
-    . Visit the frontend URL (http://localhost:3000) to upload documents and view summaries.
-    . The backend API can be accessed directly via http://localhost:8000
+## Challenges and Solutions
+- Large File Handling: Implemented file size checks and optimized the backend to handle large files efficiently.
+- Model Performance: Chose a lightweight LLM (e.g., DistilBART) to balance performance and accuracy for local deployment.
 
-### Challenges and Solutions
-    . Large File Handling: Implemented file size checks and optimized the backend to handle large files efficiently.
-    . Model Performance: Chose a lightweight LLM (e.g., DistilBART) to balance performance and accuracy for local deployment.
+## Future Improvements
+- Add support for more document types (e.g., PDF, DOCX).
+- Implement authentication and user management.
+-  Improve the UI/UX of the frontend.
 
-### Future Improvements
-
-    . Add support for more document types (e.g., PDF, DOCX).
-    . Implement authentication and user management.
-    . Improve the UI/UX of the frontend.
-
-### Bibliography
-    . FastAPI Documentation: https://fastapi.tiangolo.com/
-    . React Documentation: https://reactjs.org/docs/getting-started.html
-    . Transformers Library: https://huggingface.co/transformers/
-    
+## Bibliography
+- FastAPI Documentation: https://fastapi.tiangolo.com/
+-  React Documentation: https://reactjs.org/docs/getting-started.html
+-  Transformers Library: https://huggingface.co/transformers/
